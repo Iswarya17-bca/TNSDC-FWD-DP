@@ -1,0 +1,141 @@
+/* ---------- Global Styles ---------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff0f6;
+  color: #333;
+}
+
+header {
+  background: #b91c6b;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #b91c6b;
+  margin-bottom: 30px;
+}
+
+/* ---------- Unique About Me Flip Card ---------- */
+.about-container {
+  display: flex;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.about-card {
+  width: 320px;
+  height: 220px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.about-card:hover {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  font-size: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.front {
+  background: #b91c6b;
+}
+
+.back {
+  background: #f472b6;
+  transform: rotateY(180deg);
+}
+
+/* ---------- Skills ---------- */
+.skills-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background: #f9a8d4;
+  color: #b91c6b;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* ---------- Contact ---------- */
+.contact-details {
+  max-width: 450px;
+  margin: auto;
+  text-align: left;
+  font-size: 18px;
+  background: #f9a8d4;
+  padding: 20px;
+  border-radius: 10px;
+  color: #b91c6b;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.contact-details p {
+  margin: 12px 0;
+}
+
+.contact-details a {
+  color: #b91c6b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #b91c6b;
+  color: white;
+  margin-top: 30px;
+}
